@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Memories 📸</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="center">
+
+<h1>Our Beautiful Moments 💞</h1>
+
+<img id="galleryImg" class="gallery-img" src="assets/photo 5.jpeg">
+
+<script>
+const photos = [
+  "assets/photo1.jpeg",
+  "assets/photo2.jpeg",
+  "assets/photo4.jpeg",
+  "assets/photo 5.jpeg"
+];
+
+let i = 0;
+setInterval(() => {
+  i = (i + 1) % photos.length;
+  document.getElementById("galleryImg").src = photos[i];
+}, 2500);
+</script>
+<br>
+<button class="propose" onclick="location.href='proposal.html'">
+  One Last Surprise. CLICK ME 💕
+</button>
+
+</body>
+</html>

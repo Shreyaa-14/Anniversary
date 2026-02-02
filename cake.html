@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Cake 🎂</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="center">
+
+<h1 class="cake-title">A little Celebration 🎉</h1>
+
+
+<!-- Cake -->
+<div class="cake-container">
+  <div class="cake-layer base"></div>
+  <div class="cake-layer middle"></div>
+  <div class="cake-layer top"></div>
+  <div class="candle" onclick="blowCandle()">
+    <div class="flame"></div>
+  </div>
+</div>
+
+<p class="wish-text">Make a wish & click the candle 🕯️</p>
+
+<!-- Bubu -->
+<img src="assets/bubu-happy.gif" class="cake-bubu">
+
+<script>
+function blowCandle() {
+  document.querySelector('.flame').style.display = 'none';
+  document.querySelector('.wish-text').innerText =
+    "My wish already came true — you 💖";
+}
+</script>
+
+</body>
+</html>
